@@ -12,26 +12,27 @@
   h1 {
     position: relative;
     top: 45px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
+    font: {
+      family: Roboto;
+      style: normal;
+      weight: bold;
+      size: 36px;
+    }
     line-height: 42px;
     text-align: center;
     color: #ffffff;
   }
   p {
     position: relative;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
     top: 52px;
-    /* identical to box height */
-
+    font: {
+      family: Roboto;
+      style: normal;
+      weight: normal;
+      size: 18px;
+    }
+    line-height: 21px;
     text-align: center;
-
     color: #86bfd3;
   }
 }
@@ -48,10 +49,12 @@
     top: 45px;
     left: 62px;
     position: relative;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
+    font: {
+      family: Roboto;
+      style: normal;
+      weight: bold;
+      size: 36px;
+    }
     line-height: 42px;
     margin: 0;
     color: #000000;
@@ -62,12 +65,13 @@
     left: 62px;
     top: 66px;
     margin: 0;
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
+    font: {
+      family: DM Sans;
+      style: normal;
+      weight: bold;
+      size: 18px;
+    }
     line-height: 23px;
-
     color: #000000;
   }
 
@@ -82,21 +86,24 @@
     box-sizing: border-box;
     border-radius: 5px;
     margin: 0;
-    padding-left: 16px;
-    padding-top: 19px;
-    padding-bottom: 18px;
+    padding: {
+      left: 16px;
+      top: 19px;
+      bottom: 18px;
+    }
   }
   .password-label {
     position: relative;
     left: 62px;
     top: 100px;
     margin: 0;
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
+    font: {
+      family: DM Sans;
+      style: normal;
+      weight: bold;
+      size: 18px;
+    }
     line-height: 23px;
-
     color: #000000;
   }
   #password-input {
@@ -110,9 +117,11 @@
     box-sizing: border-box;
     border-radius: 5px;
     margin: 0;
-    padding-left: 16px;
-    padding-top: 19px;
-    padding-bottom: 18px;
+    padding: {
+      left: 16px;
+      top: 19px;
+      bottom: 18px;
+    }
   }
 
   .terms {
@@ -135,10 +144,12 @@
   .terms-text {
     width: 263px;
     height: 81px;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
+    font: {
+      family: Inter;
+      style: normal;
+      weight: normal;
+      size: 18px;
+    }
     line-height: 27px;
     color: #000000;
   }
@@ -153,13 +164,14 @@
     height: 60px;
     left: 62px;
     top: 156px;
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
+    font: {
+      family: DM Sans;
+      style: normal;
+      weight: bold;
+      size: 18px;
+    }
     line-height: 23px;
     text-align: center;
-
     color: #ffffff;
     background: #013243;
     border-radius: 5px;
