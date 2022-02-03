@@ -35,6 +35,13 @@
     text-align: center;
     color: #86bfd3;
   }
+
+  .mock-iphone {
+    position: relative;
+    width: 443px;
+    height: 552px;
+    bottom: 87px;
+  }
 }
 
 .right {
@@ -178,9 +185,43 @@
   }
 }
 
-.mock-iphone {
-  position: relative;
-  width: 443px;
-  height: 552px;
-  bottom: 87px;
+.tablet {
+  display: flex;
 }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .tablet {
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    border-radius: 0;
+  }
+  .right {
+    width: 443px;
+    height: 552px;
+    border-radius: 0px 0px 10px 10px;
+  }
+}
+@media (min-width: 414px) and (max-width:767px){
+  .tablet {
+    width: 100vw;
+    border:1px solid red;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .left {
+    border-radius: 0;
+    width: 100vw;
+    height: 552px;
+    box-sizing: border-box;
+  }
+  .right {
+    width: 100vw;
+    height: 552px;
+    border-radius: 0px 0px 10px 10px;
+    box-sizing: border-box;
+  }
+}
+
