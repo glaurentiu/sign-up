@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
 .background-img {
   background: url(../assets/img/Background.png) no-repeat center center fixed;
   background-size: cover;
@@ -8,6 +13,7 @@
   background: #013243;
   border-radius: 10px 0px 0px 10px;
   text-align: center;
+  box-sizing: border-box;
 
   h1 {
     position: relative;
@@ -203,25 +209,29 @@
     border-radius: 0px 0px 10px 10px;
   }
 }
-@media (min-width: 414px) and (max-width:767px){
+@media (min-width: 414px) and (max-width: 767px) {
+
   .tablet {
     width: 100vw;
-    border:1px solid red;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
   }
   .left {
     border-radius: 0;
-    width: 100vw;
-    height: 552px;
+    width:100vw;
+    min-width: 443px;
+    min-height: 552px;
     box-sizing: border-box;
   }
   .right {
-    width: 100vw;
-    height: 552px;
+    width:100vw;
+    min-width: 443px;
+    min-height: 552px;
     border-radius: 0px 0px 10px 10px;
     box-sizing: border-box;
   }
+  .background-img{
+    background: none;
+  }
 }
-

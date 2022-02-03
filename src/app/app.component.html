@@ -1,25 +1,29 @@
-<div class="container-fluid background-img">
-  <div class="d-flex justify-content-md-center align-items-center vh-100">
-    <div class="tablet">
-      <div class="left">
-        <h1>Gradie</h1>
-        <p>Beautiful gradients in seconds</p>
-        <img class="mock-iphone" src="../assets/img/iPhone Mockup.png" alt="">
+<div class="background-img">
 
-      </div>
-      <div class="right">
-        <h1>Login</h1>
-        <p class="email-label">Email</p>
-        <input id="email-input" type="email" class="" placeholder="john@example.com">
-        <p class="password-label">Password</p>
-        <input id="password-input" type="password" class="" placeholder="At least 8 characters">
-        <div class="terms">
-          <input type="checkbox" id="terms" name="terms">
-          <label class="terms-text" for="terms">By creating an account, you agree to the <a href="#">Terms &
-              Conditions.</a></label>
+  <div class="container-fluid w-100">
+    <div [ngClass]="innerWidth > 767? 'd-flex justify-content-md-center align-items-center vh-100' : 'd-flex justify-content-md-center align-items-top vh-100'">
+      <div class="tablet">
+        <div class="left container-fluid">
+          <h1>Gradie</h1>
+          <p>Beautiful gradients in seconds</p>
+          <img class="mock-iphone" src="../assets/img/iPhone Mockup.png" alt="">
+
         </div>
-        <button type="submit" class="create-button">Create an Account</button>
+        <div class="right">
+          <h1>Login</h1>
+          <p class="email-label">Email</p>
+          <input id="email-input" type="email" class="" placeholder="john@example.com">
+          <p class="password-label">Password</p>
+          <input id="password-input" type="password" class="" placeholder="At least 8 characters">
+          <div class="terms">
+            <input type="checkbox" id="terms" name="terms">
+            <label class="terms-text" for="terms">By creating an account, you agree to the <a href="#">Terms &
+              Conditions.</a></label>
+            </div>
+            <button type="submit" class="create-button">Create an Account</button>
+          </div>
+        </div>
       </div>
     </div>
+
   </div>
-</div>
